@@ -8,22 +8,32 @@
 
 <body>
 
-<header>
 <h1>AI Photo Editor</h1>
 <p>Upload your photo and remove background instantly</p>
-</header>
 
-<div class="container">
+<div class="box">
 
 <input type="file" id="upload">
 
+<br><br>
+
 <button onclick="removeBg()">Remove Background</button>
 
-<br><br>
+<p id="loading"></p>
+
+<div id="result">
+
+<h3>Result Image</h3>
 
 <img id="preview">
 
-<a id="download" download="image.png">Download Image</a>
+<br><br>
+
+<a id="download" download="no-bg.png">
+<button>Download Image</button>
+</a>
+
+</div>
 
 </div>
 
