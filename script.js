@@ -2,6 +2,13 @@ async function removeBg(){
 
 let file=document.getElementById("upload").files[0];
 
+if(!file){
+alert("Please upload image");
+return;
+}
+
+document.getElementById("loading").innerText="Processing image...";
+
 let formData=new FormData();
 formData.append("image_file",file);
 formData.append("size","auto");
@@ -19,5 +26,8 @@ let url=URL.createObjectURL(blob);
 
 document.getElementById("preview").src=url;
 document.getElementById("download").href=url;
+
+document.getElementById("result").style.display="block";
+document.getElementById("loading").innerText="";
 
 }
