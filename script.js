@@ -9,7 +9,7 @@ formData.append("size","auto");
 let response=await fetch("https://api.remove.bg/v1.0/removebg",{
 method:"POST",
 headers:{
-"X-Api-Key":"YOUR_API_KEY"
+"X-Api-Key":"xxK4DYpNsH3YcguAGorJMBxt"
 },
 body:formData
 });
